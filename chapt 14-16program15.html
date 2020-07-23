@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body> 
+    <script>
+       var myParent = document.body;
+var array = ["(Apple,","Samsung,","Motorola,","Nokia","Sony","Haier)"];
+
+//Create and append select list
+var selectList = document.write("select");
+selectList.id = "mySelect";
+myParent.appendChild(selectList);
+
+//Create and append the options
+for (var i = 0; i < array.length; i++) {
+    var option = document.write("option");
+    option.value = array[i];
+    option.text = array[i];
+    selectList.appendChild(option);
+}
+        
+</script>
+</body>
+</html>

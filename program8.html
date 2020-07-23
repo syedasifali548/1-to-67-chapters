@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Largest number</title>
+</head>
+<body>
+    <h1>LARGEST NUMBER</h1>
+    <script>
+        record = [24, 53, 78, 91, 12];
+        document.write(record);
+        max = -Infinity;
+        last =record.length-1;
+        for(i=0;i<=last;i++){
+        if(record[i]>max)
+        {
+            max=record[i];
+        }
+       
+        }
+        document.write("</br>" + "Largest value is:" + max);
+            </script>
+    
+</body>
+</html>
